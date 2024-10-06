@@ -39,6 +39,5 @@ btn.addEventListener("click", function () {
     }
   } else {
     resultado.innerText = "Pon algo valido";
-    document.getElementById("imagen").classList.remove("oculto")
   }
 });
