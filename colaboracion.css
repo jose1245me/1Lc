@@ -1,6 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(https://tse2.explicit.bing.net/th?id=OIP.E-DqnCxkfzn5ElOptrkfFwHaEW&pid=Api&P=0&h=180);
     color:white;
 }
