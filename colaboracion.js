@@ -22,6 +22,7 @@ btn.addEventListener("click", function () {
       operador === "/" ||
       operador === "*")
   ) {
+    document.getElementById("imagen").classList.add("oculto")
     switch (operador) {
       case "+":
         resultado.innerText = n1 + n2;
@@ -38,5 +39,6 @@ btn.addEventListener("click", function () {
     }
   } else {
     resultado.innerText = "Pon algo valido";
+    document.getElementById("imagen").classList.remove("oculto")
   }
 });
