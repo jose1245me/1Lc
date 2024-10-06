@@ -5,3 +5,9 @@ body{
     background-image: url(https://tse2.explicit.bing.net/th?id=OIP.E-DqnCxkfzn5ElOptrkfFwHaEW&pid=Api&P=0&h=180);
     color:white;
 }
+body h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
