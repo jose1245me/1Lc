@@ -11,3 +11,8 @@ body h1 {
     justify-content: center;
     font-size: 100px;
 }
+.imagenperdida {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
