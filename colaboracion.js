@@ -37,6 +37,6 @@ btn.addEventListener("click", function () {
         break;
     }
   } else {
-    resultado.innerText = "Pon algo valido";
+    resultado.innerText = "XD";
   }
 });
