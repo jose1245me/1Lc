@@ -4,7 +4,6 @@ body{
     background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-negro-azul_1340-17010.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 #divInputs{
     display: flex;
@@ -12,9 +11,11 @@ body{
 }
 input{
     width: 100px;
-    margin: auto;
+    
 }
-
+h1{
+    color: white;
+}
 button{
     width: 80px;
     margin: auto;
