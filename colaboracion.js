@@ -2,13 +2,16 @@ const input1 = document.getElementById("input1");
 const signo = document.getElementById("signo");
 const input2 = document.getElementById("input2");
 const resultado = document.getElementById("resultado");
-const btn = document.getElementById("btn");
+const form = document.getElementById("divInputs");
 const imagenCorrecta =  document.getElementById("imagenPerdida")
 const imagenIncorrecta = document.getElementById("imagen");
 
 
 
-btn.addEventListener("click", function () {
+form.addEventListener("submit", function(a){
+
+   a.preventDefault()
+
 
     let n1 = parseFloat(input1.value);
     let operador = signo.value;
