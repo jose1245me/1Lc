@@ -25,7 +25,7 @@ btn.addEventListener("click", function () {
     document.getElementById("imagen").classList.add("oculto")
     switch (operador) {
       case "+":
-        resultado.innerText = n1 + n2;
+        resultado.innerText = n1 + n2; 
         break;
       case "-":
         resultado.innerText = n1 - n2;
@@ -41,5 +41,10 @@ btn.addEventListener("click", function () {
     document.getElementById("imagen").classList.remove("oculto")
     resultado.innerText = "XD";
 
+  }
+  if (!isNaN(parseFloat(resultado.innerText)))
+
+ {
+    document.getElementById("imagenperdida").classList.remove("oculto")
   }
 });
