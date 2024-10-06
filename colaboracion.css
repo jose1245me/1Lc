@@ -1,6 +1,5 @@
 body{
     font-family: sans-serif;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 #divInputs{
@@ -9,5 +8,10 @@ body{
 }
 input{
     width: 100px;
+    margin: auto;
+}
+
+button{
+    width: 80px;
     margin: auto;
 }
