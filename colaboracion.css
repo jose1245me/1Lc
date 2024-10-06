@@ -1,6 +1,10 @@
 body{
     font-family: sans-serif;
     text-align: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-negro-azul_1340-17010.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 #divInputs{
     display: flex;
