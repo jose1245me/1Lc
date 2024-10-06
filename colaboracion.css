@@ -1,19 +1,12 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(https://tse2.explicit.bing.net/th?id=OIP.E-DqnCxkfzn5ElOptrkfFwHaEW&pid=Api&P=0&h=180);
+    font-family: sans-serif;
     text-align: center;
 }
-h1 {
-    font-size: 100px;
-    color: white;
-}
-p{
-    color: white;
-}
-.imagenperdida {
+#divInputs{
     display: flex;
-    justify-content: right;
-    margin-right: 50px;
+    flex-direction: column;
+}
+input{
+    width: 100px;
+    margin: auto;
 }
