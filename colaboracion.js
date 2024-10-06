@@ -38,6 +38,8 @@ btn.addEventListener("click", function () {
         break;
     }
   } else {
-    resultado.innerText = "Pon algo valido";
+    document.getElementById("imagen").classList.remove("oculto")
+    resultado.innerText = "XD";
+
   }
 });
