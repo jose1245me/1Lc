@@ -1,0 +1,29 @@
+body h1 {
+    color: pink;
+}
+
+#Titulo {
+    font-size: 50px;
+   border:5px black solid;
+    color:black;
+    border-radius: 5px;
+    border-width: 7px;
+}
+
+body {
+    font-size: 40px;
+    font-family:times new roman; 
+}
+
+#fondo {
+    background-color: grey;
+    opacity: 2.0;
+    font-size:40px;
+}
+body {
+    justify-content: center;
+    display:contents;
+    align-items: center;
+}
+
+/* el arroba se usa como un selector universal a todo el archivo de html */
