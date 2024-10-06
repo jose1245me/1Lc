@@ -3,13 +3,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(https://tse2.explicit.bing.net/th?id=OIP.E-DqnCxkfzn5ElOptrkfFwHaEW&pid=Api&P=0&h=180);
-    color:white;
+    text-align: center;
 }
-body h1 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+h1 {
     font-size: 100px;
+    color: white;
+}
+p{
+    color: white;
 }
 .imagenperdida {
     display: flex;
