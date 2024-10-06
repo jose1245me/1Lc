@@ -3,6 +3,9 @@ const signo = document.getElementById("signo");
 const input2 = document.getElementById("input2");
 const resultado = document.getElementById("resultado");
 const btn = document.getElementById("btn");
+const imagenCorrecta =  document.getElementById("imagenPerdida")
+const imagenIncorrecta = document.getElementById("imagen");
+
 
 
 btn.addEventListener("click", function () {
@@ -37,14 +40,14 @@ btn.addEventListener("click", function () {
         resultado.innerText = n1 / n2;
         break;
     }
+    if (!isNaN(parseFloat(resultado.innerText))){
+     imagenCorrecta.classList.remove("oculto")
+    }
   } else {
-    document.getElementById("imagen").classList.remove("oculto")
+    imagenIncorrecta.classList.remove("oculto")
+    imagenCorrecta.classList.add("oculto")
     resultado.innerText = "XD";
 
   }
-  if (!isNaN(parseFloat(resultado.innerText)))
 
- {
-    document.getElementById("imagenperdida").classList.remove("oculto")
-  }
 });
