@@ -1,7 +1,5 @@
-addEventListener("DOMContentLoaded", function(){
-  const audio = new Audio('Record (online-voice-recorder.com).mp3')
-  audio.play();
-})
+
+
 const input1 = document.getElementById("input1");
 const signo = document.getElementById("signo");
 const input2 = document.getElementById("input2");
@@ -61,5 +59,12 @@ form.addEventListener("submit", function(a){
 
 
 
- 
-
+window.addEventListener('click', () => {
+  const audio = new Audio('Record (online-voice-recorder.com).mp3');
+  audio.preload = 'auto';
+  audio.play().catch(error => {
+    console.error('La reproducción automática fue bloqueada:', error);
+  });
+  
+  // Una vez que el audio se ha intentado reproducir, removemos el event listener
+});
