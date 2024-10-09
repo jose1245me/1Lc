@@ -1,3 +1,4 @@
+
 const input1 = document.getElementById("input1");
 const signo = document.getElementById("signo");
 const input2 = document.getElementById("input2");
@@ -54,3 +55,10 @@ form.addEventListener("submit", function(a){
   }
 
 });
+
+const imgWithAudio = document.getElementById("cardioLostGuy");
+imgWithAudio.addEventListener("mouseenter", ()=>{
+  const audio = new Audio('Record (online-voice-recorder.com).mp3')
+  audio.play();
+  
+})
