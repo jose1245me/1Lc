@@ -65,6 +65,10 @@ window.addEventListener('click', () => {
   audio.play().catch(error => {
     console.error('La reproducción automática fue bloqueada:', error);
   });
-  
+  document.getElementById("XD").classList.remove("animation");
+  setTimeout(() => {
+    document.getElementById("XD").classList.add("animation")
+  }, 1000);
+ 
   // Una vez que el audio se ha intentado reproducir, removemos el event listener
 });
