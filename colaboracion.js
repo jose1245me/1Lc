@@ -60,7 +60,7 @@ form.addEventListener("submit", function(a){
 
 
 window.addEventListener('click', () => {
-  const audio = new Audio('Record (online-voice-recorder.com).mp3');
+  const audio = new Audio('vooz.mp3');
   audio.preload = 'auto';
   audio.play().catch(error => {
     console.error('La reproducción automática fue bloqueada:', error);

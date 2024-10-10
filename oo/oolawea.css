@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+    background-color: black;
+    background-size: cover;
+    color:white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#gameArea {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    
+   
+}
+
+#box {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/462546270_905157534925239_3128057722719698110_n.png?stp=dst-png_s403x403&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YXOE4VrOI3gQ7kNvgEmA_Bg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AhAv0CMaJOLMOvb9nM7GIXG&oh=03_Q7cD1QG6tm82_8fbAwqALIffSOesPtbhHmllbEky0kW4BRFMbw&oe=672F7D1E);
+    background-size: cover;
+    position: absolute;
+    
+}
+img{
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    margin:auto;
+    background-size: contain;
+}
+.oculto{
+    display: none;
+    
+}
