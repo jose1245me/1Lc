@@ -32,6 +32,7 @@ box.addEventListener("click", function() {
         homero.play()
         imagendelhomero.classList.remove("oculto")
         
+        
     }
   
 });
