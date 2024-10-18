@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="colaboracion.css">
-    <title>LCCC</title>
-    <link href="src/output.css" rel="stylesheet">
+ 
+    <title>Document</title>
 </head>
-
 <body>
-
-  
-         
-   <script src="colaboracion.js" defer></script>
+    
+    <div id="calculadora">
+        <h1> Calculadora lost</h1>
+        <input id="display" readonly>
+        <div id="teclas">
+            <button onclick="lcc('+')" class="operador-btn" > + </button>
+            <button onclick="lcc('7')"> 7 </button>
+            <button onclick="lcc('8')"> 8 </button>
+            <button onclick="lcc('8')"> 9 </button>
+            <button onclick="lcc('-')"class="operador-btn"> - </button>
+            <button onclick="lcc('4')"> 4 </button>
+            <button onclick="lcc('5')"> 5 </button>
+            <button onclick="lcc('6')"> 6 </button>
+            <button onclick="lcc('*')"class="operador-btn"> * </button>
+            <button onclick="lcc('1')"> 1 </button>
+            <button onclick="lcc('2')"> 2 </button>
+            <button onclick="lcc('3')"> 3 </button>
+            <button onclick="lcc('/')"class="operador-btn"> / </button>
+            <button onclick="lcc('0')"> 0 </button>
+            <button onclick="lcc('.')"> . </button>
+            <button onclick="Calcular()"> = </button>
+            <button onclick="Borrar()"class="operador-btn"> C </button>
+        </div>
+    </div>
+    
+    <script src="colaboracion.js"></script>
 </body>
-
 </html>
