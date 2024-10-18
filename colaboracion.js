@@ -11,5 +11,10 @@ function Borrar(){
 }
 
 function Calcular(){
-    display.value = eval(display.value);
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "lcccxcv";
+    }
 }
