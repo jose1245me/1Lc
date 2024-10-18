@@ -11,10 +11,9 @@ function Borrar(){
 }
 
 function Calcular(){
-    try{
         display.value = eval(display.value);
+    if(isNaN(display.value)){
+        display.value = "lclxlxlxxxxctu"
     }
-    catch(error){
-        display.value = "lcccxcv";
-    }
+    
 }
