@@ -66,3 +66,17 @@ div h1 {
     background:none;
     color: beige;
 }
+.container {
+    width: 10%;
+   opacity: 0;
+    transition: all ease-in-out 0.5s
+}
+.container:hover {
+    width: 30%;
+    opacity: 100%;
+}
+h1 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
