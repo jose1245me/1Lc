@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/input.css">
     <link rel="stylesheet" href="colaboracion.css">
- 
-    <title>Document</title>
 </head>
+
 <body>
-    
-    <div id="calculadora">
-        <h1> Calculadora lost</h1>
-        <input id="display" readonly>
-        <div id="teclas">
-            <button onclick="lcc('+')" class="operador-btn" > + </button>
-            <button onclick="lcc('7')"> 7 </button>
-            <button onclick="lcc('8')"> 8 </button>
-            <button onclick="lcc('8')"> 9 </button>
-            <button onclick="lcc('-')"class="operador-btn"> - </button>
-            <button onclick="lcc('4')"> 4 </button>
-            <button onclick="lcc('5')"> 5 </button>
-            <button onclick="lcc('6')"> 6 </button>
-            <button onclick="lcc('*')"class="operador-btn"> * </button>
-            <button onclick="lcc('1')"> 1 </button>
-            <button onclick="lcc('2')"> 2 </button>
-            <button onclick="lcc('3')"> 3 </button>
-            <button onclick="lcc('/')"class="operador-btn"> / </button>
-            <button onclick="lcc('0')"> 0 </button>
-            <button onclick="lcc('.')"> . </button>
-            <button onclick="Calcular()"> = </button>
-            <button onclick="Borrar()"class="operador-btn"> C </button>
+
+    <div class="max-w-[375px] w-[375px] mx-auto flex-grow break-words">
+        <div id="form" class="text-center"> <!-- Este contenedor es todo el form-->
+            <h1 class="hevy">HEAVY</h1>
+            <div id="formFooter" class="mt-auto bg-gold">
+                <button id="emailRegister">Registrate con correo electronico</button>
+                <h6>¿Tienes una cuenta? <a style="color: blue;" href="">Iniciar sesión</a></h6>
+            </div>
         </div>
     </div>
-    
+
     <script src="colaboracion.js"></script>
 </body>
+
 </html>
