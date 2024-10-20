@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavy</title>
+    <link href="https://unpkg.com/heroicons@1.0.6/outline.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="src/input.css">
     <link rel="stylesheet" href="colaboracion.css">
@@ -12,14 +13,37 @@
 
 <body>
 
-    <div class="max-w-[375px] w-[375px] mx-auto flex-grow break-words">
-        <div id="form" class="text-center"> <!-- Este contenedor es todo el form-->
+    <div class="max-w-[375px] w-[375px] mx-auto flex-grow break-words"> <!--el todo-->
+        <div class="form text-center" id="preForm"> <!-- Este contenedor es todo el form-->
             <h1 class="hevy">HEAVY</h1>
             <div id="formFooter" class="mt-auto bg-gold">
                 <button id="emailRegister">Registrate con correo electronico</button>
                 <h6>¿Tienes una cuenta? <a style="color: blue;" href="">Iniciar sesión</a></h6>
             </div>
         </div>
+
+        <div class="form" id="register">
+            <header class="text-white"> <button class="flex items-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                    </svg> </button>
+                <h1>Regístrate</h1>
+            </header>
+            <div id="registerInputs">
+                <h6>Correo Electrónico</h6>
+                <input type="text" placeholder="ejemplo@gmail.com">
+                <h6>Contraseña</h6>
+                <input type="text" placeholder="mínimo 6 caracteres">
+                <h6>Nombre de Usuario</h6>
+                <input type="text" placeholder="usuario1">
+                <div style="display: flex; justify-content: center;">
+                     <button>Continuar</button> <!--Hay que desactivarlo-->
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="colaboracion.js"></script>
