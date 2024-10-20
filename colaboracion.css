@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: white;
+    background-color: rgb(28, 28, 28);
 }
 
 .form {
@@ -39,6 +40,9 @@ body {
     margin-bottom: 10px;
 }
 
+#register{
+
+}
 #register header {
     display: flex;
     align-items: center;
@@ -97,4 +101,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 3px;
     color: white;
+}
+
+.oculto{
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.Dnone{
+display: none;
+}
+.show{
+    opacity: 1;
+    transition: opacity 0.2s;
 }
