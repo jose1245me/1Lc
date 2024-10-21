@@ -5,8 +5,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: white;
+    background-position: 0;
     background-color: rgb(28, 28, 28);
+   
 }
+
 
 .form {
     text-align: center;
@@ -14,7 +17,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: radial-gradient(circle, rgb(14, 14, 14) 30%, black 80%);
+    background-size: cover;
+    background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/462557104_2305332136494301_840855297279810203_n.png?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fN4FwusalskQ7kNvgFsrGfd&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AFR_px69XVaEpvO08QCaMUv&oh=03_Q7cD1QFIcVROcrSSpXBXnOeo5RkD-jCMuskvph6j4FCfDcXwpA&oe=673CECFD);
+    background-position: center;
+   
 }
+
+
 
 #formFooter {
     margin-top: auto;
@@ -40,12 +49,13 @@ body {
     margin-bottom: 10px;
 }
 
-#register {}
+#register{
 
+}
 #register header {
     display: flex;
     align-items: center;
-    background: rgb(21, 21, 21);
+    background: rgb(0, 0, 0);
     padding: 10px;
 
 }
@@ -62,6 +72,7 @@ body {
 #register header h1 {
     color: white;
     margin: auto;
+    
 }
 
 #registerInputs {
@@ -133,4 +144,14 @@ body {
 .show {
     opacity: 1;
     transition: opacity 0.2s;
+}
+#loginregister {
+    background-color: black;
+    
+}
+.cc {
+    padding: 0px 0px;
+    color: blue;
+    background-color: black;
+    
 }
