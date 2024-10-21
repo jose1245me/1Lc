@@ -17,7 +17,7 @@
         <div class="form text-center" id="preForm"> <!-- Este contenedor es todo el form-->
             <h1 class="hevy">HEAVY</h1>
             <div id="formFooter" class="mt-auto bg-gold">
-                <button id="emailRegister">Registrate con correo electronico</button>
+                <button id="emailRegister">Regístrate con correo electronico</button>
                 <h6>¿Tienes una cuenta? <a style="color: blue;" href="">Iniciar sesión</a></h6>
             </div>
         </div>
@@ -31,17 +31,17 @@
                     </svg> </button>
                 <h1>Regístrate</h1>
             </header>
-            <div id="registerInputs">
+            <form id="registerInputs">
                 <h6>Correo Electrónico</h6>
-                <input type="text" placeholder="ejemplo@gmail.com">
+                <input type="text" id="emailInput"  autocomplete="off" placeholder="ejemplo@gmail.com"><h1 id="invalidEmail" class="invalid Dnone">❌</h1><h1 id="correctEmail" class="correct Dnone">✅</h1>
                 <h6>Contraseña</h6>
-                <input type="text" placeholder="mínimo 6 caracteres">
+                <input type="text" id="passwordInput" autocomplete="off" placeholder="mínimo 6 caracteres"><h1 id="invalidPassword" class="invalid Dnone" >❌</h1><h1 id="correctPassword" class="correct Dnone">✅</h1>
                 <h6>Nombre de Usuario</h6>
-                <input type="text" placeholder="usuario1">
+                <input type="text" id="nicknameInput"autocomplete="off" placeholder="usuario1 (mínimo 4 letras)"><h1 id="invalidUser" class="invalid Dnone">❌</h1><h1 id="correctUser" class="correct Dnone">✅</h1>
                 <div style="display: flex; justify-content: center;">
-                     <button>Continuar</button> <!--Hay que desactivarlo-->
+                     <button id="formContinueButton" class="validButton" disabled>Continuar</button> <!--Hay que desactivarlo-->
                 </div>
-            </div>
+            </form>
         </div>
 
     </div>

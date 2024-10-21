@@ -40,9 +40,8 @@ body {
     margin-bottom: 10px;
 }
 
-#register{
+#register {}
 
-}
 #register header {
     display: flex;
     align-items: center;
@@ -76,6 +75,14 @@ body {
     margin-top: 8px;
 }
 
+.invalid {
+    display: inline;
+}
+
+.correct {
+    display: inline;
+}
+
 #registerInputs input {
     font-size: 14px;
     width: 85%;
@@ -91,8 +98,19 @@ body {
     font-size: 15px;
     padding: 4px 37% 4px 37%;
     border-radius: 10px;
-    transition: color 0.1s;
+}
 
+#registerInputs button.valid {
+    color: white;
+    background: rgb(79, 79, 255);
+    padding: 5px 50px 5px 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.1s;
+}
+
+#registerInputs button.valid:hover {
+    background-color: rgb(24, 24, 71);
 }
 
 .hevy {
@@ -103,14 +121,16 @@ body {
     color: white;
 }
 
-.oculto{
+.oculto {
     opacity: 0;
     transition: opacity 0.2s;
 }
-.Dnone{
-display: none;
+
+.Dnone {
+    display: none;
 }
-.show{
+
+.show {
     opacity: 1;
     transition: opacity 0.2s;
 }
