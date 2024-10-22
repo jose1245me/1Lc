@@ -76,7 +76,7 @@ function inputValidPassword(input) {
     });
 }
 inputValidPassword(document.getElementById("passwordInput"));
-
+ 
 function inputValidUser(input) {
     input.addEventListener("input", () => {
         input.value = input.value.trim();
