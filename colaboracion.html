@@ -18,11 +18,11 @@
             <h1 class="hevy">HEAVY</h1>
             <div id="formFooter" class="mt-auto bg-gold">
                 <button id="emailRegister">Regístrate con correo electronico</button>
-                <h6>¿Tienes una cuenta? <a style="color: blue;" href="">Iniciar sesión</a></h6>
+                <a id="loginText">¿Tienes una cuenta? <span style="color: blue;">Iniciar sesión</span></a>
             </div>
         </div>
 
-        <div class="form oculto Dnone" id="register">
+        <div class="form Dnone" id="register">
             <header class="text-white"> <button class="flex items-center text-white" id="registerBack">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -31,7 +31,7 @@
                     </svg> </button>
                 <h1>Regístrate</h1>
             </header>
-            <form id="registerInputs">
+            <form id="registerInputs" class="inputsFormStyle">
                 <h6>Correo Electrónico</h6>
                 <input type="text" id="emailInput"  autocomplete="off" placeholder="ejemplo@gmail.com"><h1 id="invalidEmail" class="invalid Dnone">❌</h1><h1 id="correctEmail" class="correct Dnone">✅</h1>
                 <h6>Contraseña</h6>
@@ -39,9 +39,33 @@
                 <h6>Nombre de Usuario</h6>
                 <input type="text" id="nicknameInput"autocomplete="off" placeholder="usuario1 (mínimo 4 letras)"><h1 id="invalidUser" class="invalid Dnone">❌</h1><h1 id="correctUser" class="correct Dnone">✅</h1>
                 <div style="display: flex; justify-content: center;">
-                     <button id="formContinueButton" class="validButton" disabled>Continuar</button> <!--Hay que desactivarlo-->
+                     <button id="formContinueButton" class="validButton" disabled>Continuar</button> 
                 </div>
             </form>
+        </div>
+
+        <div class="Dnone form" id="login">
+            <header class="text-white"> <button class="flex items-center text-white" id="loginBack">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                </svg> </button>
+            <h1>Iniciar Sesión</h1>
+        </header>
+        <form id="loginInputs" class="inputsFormStyle">
+            <h6>Correo Electrónico o Nombre de usuario</h6>
+            <input type="text" id="loginEmailInput"  autocomplete="off" placeholder="ejemplo@gmail.com">
+            <h6>Contraseña</h6>
+            <input type="text" id="loginPasswordInput" autocomplete="off" placeholder="mínimo 6 caracteres">
+            <div style="display: flex; justify-content: center;">
+                 <button id="loginContinueButton" class="validButton" disabled>Continuar</button> 
+            </div>
+        </form>
+        </div>
+
+        <div class="Dnone" id="home"> 
+            
         </div>
 
     </div>

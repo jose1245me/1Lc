@@ -10,7 +10,7 @@ const port = 3000;
 
 // Middleware para CORS y parseo de JSON
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'http://127.0.0.1:5500'],
 }))
 app.use(express.json());
 
@@ -19,7 +19,10 @@ const connectDB = async () => {
   try {
     console.log('URI de conexión:', process.env.MONGODB_URI); // Verifica que esta línea imprima la URI
     await mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+    
     console.log('Conectado a MongoDB Atlas');
+    console.log('URI de conexión:', process.env.MONGODB_URI); // Antes de la conexión
+console.log('Clave de conexión:', process.env.MONGODB_URI !== undefined ? 'Definida' : 'No definida');
   } catch (error) {
     console.error('Error de conexión:', error.message);
     process.exit(1);
@@ -40,6 +43,7 @@ connectDB();
 
 // Ruta para registrar usuarios
 app.post('/register', async (req, res) => {
+  console.log("Solicitud recibida en /register"); 
   const { nickname, email, password } = req.body;
 
   try {
@@ -53,7 +57,7 @@ app.post('/register', async (req, res) => {
     res.status(201).json({ message: 'Usuario registrado exitosamente' });
   } catch (error) {
     if (error.code === 11000) { // Código de error para duplicado de clave única (email en este caso)
-      res.status(400).json({ message: 'Este correo electrónico ya está registrado' });
+      res.status(400).json({ message: 'Este correo electrónico / usuario ya está registrado' });
     } else {
       res.status(400).json({ message: 'Error en el registro: ' + error.message });
     }
