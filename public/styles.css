@@ -145,6 +145,87 @@ body {
 }
 
 
+#unitsSelector  header {
+    display: flex;
+    align-items: center;
+    background: rgb(21, 21, 21);
+    padding: 10px;
+    text-align: center;
+}
+#unitsSelector{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#unitsSelector h1{
+margin: auto;
+}
+#unitsSelector h6{
+    margin: 10px 0 0 20px;
+    font-size: 14px;
+    color: rgb(82, 84, 85);
+}
+#unitsSelector div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+#unitsSelector .USbtn{
+    margin-top: -7px;
+    width: 170px;
+    padding: 7px 0 7px 0;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(239, 239, 239);
+    color: black;
+    transition: background-color 0.05s;
+} 
+
+#unitsSelector .USbtn:hover{
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+#unitsSelector .USright{
+    border-radius: 0 10px 10px 0;
+}
+
+
+#unitsSelector .UStrueBtn{
+    background-color: #155bff;
+    color: white;
+    transition: background-color 0.05s;
+}
+
+#unitsSelector .UStrueBtn:hover{
+    background-color: #155bff2f;
+}
+
+
+
+
+#unitsSelector footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+#unitsSelector footer button{
+    color: white;
+    background-color: #155bff;
+    width: 350px;
+    padding: 8px 0 8px 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.05s;
+}
+#unitsSelector footer button:hover{
+    background-color: #155bff3f;
+}
+
+
+
+
+
 .hevy {
     /* para el logo */
     font-size: 40px;
@@ -159,7 +240,7 @@ body {
 }
 
 .Dnone {
-    display: none;
+    display: none !important;
 }
  
 .show {

@@ -1,3 +1,7 @@
+//check or X
+
+
+
 export function inputValidEmail(input) {
     input.addEventListener("input", () => {
       input.value = input.value.trim();
@@ -28,7 +32,11 @@ export function inputValidEmail(input) {
         document.getElementById("invalidEmail").classList.add("Dnone");
       }
     });
-  }
+  } 
+  //funcion para validar email de register (input)
+
+
+
   
   export function inputValidPassword(input) {
     input.addEventListener("input", () => {
@@ -41,7 +49,9 @@ export function inputValidEmail(input) {
       }
     });
   }
-  
+  //funcion para validar contraseña de register
+
+
   export function inputValidUser(input) {
     input.addEventListener("input", () => {
       input.value = input.value.trim();
@@ -50,3 +60,4 @@ export function inputValidEmail(input) {
       document.getElementById("invalidUser").classList.toggle("Dnone", isValid);
     });
   }
+  //funcion para validar usuario

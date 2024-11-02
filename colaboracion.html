@@ -1,78 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">       
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heavy</title>
-    <link href="https://unpkg.com/heroicons@1.0.6/outline.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/heroicons@1.0.6/outline.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/input.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="public/styles.css" />
 </head>
 
 <body>
+    <div class="max-w-[375px] w-[375px] mx-auto flex-grow break-words">
+        <!--el todo-->
 
-    <div class="max-w-[375px] w-[375px] mx-auto flex-grow break-words"> <!--el todo-->
-        <div class="form text-center" id="preForm"> <!-- Este contenedor es todo el form-->
+        <div class="form text-center" id="preForm">
+            <!-- Este contenedor es antes de registrarse/logearse-->
             <h1 class="hevy">HEAVY</h1>
+
             <div id="formFooter" class="mt-auto bg-gold">
                 <button id="emailRegister">Regístrate con correo electronico</button>
-                <a id="loginText">¿Tienes una cuenta? <span style="color: blue;">Iniciar sesión</span></a>
+                <a id="loginText">¿Tienes una cuenta?
+                    <span style="color: blue">Iniciar sesión</span></a>
             </div>
         </div>
 
         <div class="form Dnone" id="register">
-            <header class="text-white"> <button class="flex items-center text-white" id="registerBack">
+            <!-- Este contenedor es el registro (todo)-->
+            <header class="text-white">
+                <button class="flex items-center text-white" id="registerBack">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M15 12H3m0 0l6 6m-6-6l6-6" />
-                    </svg> </button>
+                    </svg>
+                </button>
                 <h1>Regístrate</h1>
             </header>
             <form id="registerInputs" class="inputsFormStyle">
+                <!-- Este contenedor es el de los inputs  -->
+
                 <h6>Correo Electrónico</h6>
-                <input type="text" id="emailInput"  autocomplete="off" placeholder="ejemplo@gmail.com"><h1 id="invalidEmail" class="invalid Dnone">❌</h1><h1 id="correctEmail" class="correct Dnone">✅</h1>
+                <input type="text" id="emailInput" autocomplete="off" placeholder="ejemplo@gmail.com" />
+                <h1 id="invalidEmail" class="invalid Dnone">❌</h1>
+                <h1 id="correctEmail" class="correct Dnone">✅</h1>
                 <h6>Contraseña</h6>
-                <input type="text" id="passwordInput" autocomplete="off" placeholder="mínimo 6 caracteres"><h1 id="invalidPassword" class="invalid Dnone" >❌</h1><h1 id="correctPassword" class="correct Dnone">✅</h1>
+                <input type="text" id="passwordInput" autocomplete="off" placeholder="mínimo 6 caracteres" />
+                <h1 id="invalidPassword" class="invalid Dnone">❌</h1>
+                <h1 id="correctPassword" class="correct Dnone">✅</h1>
                 <h6>Nombre de Usuario</h6>
-                <input type="text" id="nicknameInput"autocomplete="off" placeholder="usuario1 (mínimo 4 letras)"><h1 id="invalidUser" class="invalid Dnone">❌</h1><h1 id="correctUser" class="correct Dnone">✅</h1>
-                <div style="display: flex; justify-content: center;">
-                     <button id="formContinueButton" class="validButton" disabled>Continuar</button> 
+                <input type="text" id="nicknameInput" autocomplete="off" placeholder="usuario1 (mínimo 4 letras)" />
+                <h1 id="invalidUser" class="invalid Dnone">❌</h1>
+                <h1 id="correctUser" class="correct Dnone">✅</h1>
+                <div style="display: flex; justify-content: center">
+                    <button id="registerContinueButton" class="validButton" disabled>
+                        Continuar
+                    </button>
                 </div>
             </form>
         </div>
 
         <div class="Dnone form" id="login">
-            <header class="text-white"> <button class="flex items-center text-white" id="loginBack">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 12H3m0 0l6 6m-6-6l6-6" />
-                </svg> </button>
-            <h1>Iniciar Sesión</h1>
-        </header>
-        <form id="loginInputs" class="inputsFormStyle">
-            <h6>Correo Electrónico o Nombre de usuario</h6>
-            <input type="text" id="loginEmailInput"  autocomplete="off" placeholder="ejemplo@gmail.com">
-            <h6>Contraseña</h6>
-            <input type="text" id="loginPasswordInput" autocomplete="off" placeholder="mínimo 6 caracteres">
-            <div style="display: flex; justify-content: center;">
-                 <button id="loginContinueButton" class="validButton" disabled>Continuar</button> 
+            <!-- Este contenedor es para el login (todo)-->
+            <header class="text-white">
+                <button class="flex items-center text-white" id="loginBack">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                    </svg>
+                </button>
+                <h1>Iniciar Sesión</h1>
+            </header>
+            <form id="loginInputs" class="inputsFormStyle">
+                <!-- Este contenedor es para los inputs-->
+                <h6>Correo Electrónico o Nombre de usuario</h6>
+                <input type="text" id="loginEmailInput" autocomplete="off" placeholder="ejemplo@gmail.com" />
+                <h6>Contraseña</h6>
+                <input type="text" id="loginPasswordInput" autocomplete="off" placeholder="mínimo 6 caracteres" />
+                <div style="display: flex; justify-content: center">
+                    <button id="loginContinueButton" class="validButton" disabled>
+                        Continuar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="Dnone" id="unitsSelector">
+            <header class="text-white">
+                <h1>Selecciona Unidades</h1>
+            </header>
+            <h6>Peso</h6>
+            <div>
+                <button class="USbtn UStrueBtn" id="USkg">kg</button><button class="USbtn USright"
+                    id="USlb">lbs</button>
             </div>
-        </form>
+            <h6>Distancia</h6>
+            <div>
+                <button class="USbtn UStrueBtn" id="USkm">kilómetros</button><button class="USbtn USright"
+                    id="USmiles">millas</button>
+            </div>
+            <h6>Medidas Corporales</h6>
+            <div>
+                <button class="USbtn UStrueBtn" id="UScm">cm</button><button class="USbtn USright" id="USin">in</button>
+            </div>
+
+            <footer>
+                <button id="UScontinueBtn">Continuar</button>
+            </footer>
         </div>
 
-        <div class="Dnone" id="home"> 
-            
+        <div class="Dnone" id="main"> <!-- Este contenedor es la pagina principal-->
+ 
         </div>
-
     </div>
 
-   
-    <script type="module" src="js/main.js"></script>
-  
+
+
+
+
+
+
+
+
+    
+    <script type="module" defer src="public/js/main.js"></script>
 </body>
 
-</html> 
+</html>
