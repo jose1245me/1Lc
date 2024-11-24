@@ -19,6 +19,14 @@ export function setupEventHandlers(animacion, handleLogin, handleRegister) {
     document.getElementById("loginBack").addEventListener("click", (a) => {
         animacion(document.getElementById("login"), document.getElementById("preForm"));
     });
+    
+    document.getElementById("settingsProfileBtn").addEventListener("click", (a) => {
+        animacion(document.getElementById("profileMainPage"), document.getElementById("heavySettings"));
+    });
+    document.getElementById("heavySettingsBack").addEventListener("click", (a) => {
+        animacion(document.getElementById("heavySettings"), document.getElementById("profileMainPage"));
+    });
+  
     //animaciones generales para eventos como "click"
 
 
@@ -137,4 +145,50 @@ export function UScontinueButton(button){
 }
 
 UScontinueButton(document.getElementById("UScontinueBtn"))
+
+
+
+
+export function footerBtns(){
+    const home = document.getElementById("homeFooterBtn");
+    const workout = document.getElementById("workoutFooterBtn");
+    const profile = document.getElementById("profileFooterBtn");
+    
+     const cambiarPagina = (oldPage, newPage, otherPage, thisBtn, otherBtn1, otherBtn2)=>{
+        thisBtn.classList.add("footerActiveBtn");
+        otherBtn1.classList.remove("footerActiveBtn");
+        otherBtn2.classList.remove("footerActiveBtn");
+
+        oldPage.classList.add("Dnone");
+        newPage.classList.remove("Dnone");
+        otherPage.classList.add("Dnone");
+    }
+    home.addEventListener("click", ()=> cambiarPagina(
+        document.getElementById("workoutMainPage"),
+         document.getElementById("homeMainPage"),
+         document.getElementById("profileMainPage"),
+        document.getElementById("homeFooterBtn"),
+         document.getElementById("workoutFooterBtn"),
+       document.getElementById("profileFooterBtn")
+    ))
+
+    workout.addEventListener("click", ()=> cambiarPagina(
+        document.getElementById("homeMainPage"),
+         document.getElementById("workoutMainPage"),
+         document.getElementById("profileMainPage"),
+        document.getElementById("workoutFooterBtn"),
+         document.getElementById("homeFooterBtn"),
+       document.getElementById("profileFooterBtn")
+    ))
+
+    profile.addEventListener("click", ()=> cambiarPagina(
+        document.getElementById("workoutMainPage"),
+         document.getElementById("profileMainPage"),
+         document.getElementById("homeMainPage"),
+        document.getElementById("profileFooterBtn"),
+         document.getElementById("workoutFooterBtn"),
+       document.getElementById("homeFooterBtn")
+    ))
+};
+
 

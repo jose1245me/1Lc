@@ -5,9 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heavy</title>
-    <link href="https://unpkg.com/heroicons@1.0.6/outline.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/input.css" />
     <link rel="stylesheet" href="public/styles.css" />
 </head>
 
@@ -111,8 +118,186 @@
             </footer>
         </div>
 
+
+
         <div class="Dnone" id="main"> <!-- Este contenedor es la pagina principal-->
- 
+
+            <div class="Dnone mainPagesStyle" id="homeMainPage">
+                <header class="mainHeaders">
+                    <h1>
+                        Inicio
+                    </h1>
+                </header>
+            </div>
+
+            <div id="workoutMainPage" class="mainPagesStyle">
+                <header class="mainHeaders">
+                    <h2>
+                        PRO
+                    </h2>
+                    <h1>
+                        Entrenamiento
+                    </h1>
+                </header>
+
+                <strong>
+                    <h3>Inicio Rápido</h3>
+                </strong>
+                <button class="largeGrayBtns"><span class="span5pxAway material-symbols-outlined">add</span> Empezar
+                    Entrenamiento Vacío</button>
+
+                <strong>
+                    <h3>Rutinas</h3>
+                </strong>
+
+                <div class="genericCenterDiv">
+                    <button class="midGrayBtns"><span
+                            class="span5pxAway material-symbols-outlined">assignment</span>Nueva Rutina</button>
+                    <button class="midGrayBtns"><span
+                            class="span5pxAway material-symbols-outlined">search</span>Explorar</button>
+                </div>
+
+            </div>
+
+            <div class="Dnone mainPagesStyle" id="profileMainPage">
+                <header class="mainHeaders">
+                    <h2 class="opacityHover" id="editProfileBtn">Editar Perfil</h2>
+
+                    <div>
+                        <h1 class="usernameTextContent"> <!--Texto con username--> </h1>
+                    </div>
+
+                    <span id="settingsProfileBtn" class="material-symbols-outlined opacityHover">
+                        settings
+                    </span>
+                </header>
+
+                <div id="divFlexProfileMain"> <!-- imagen y texto con botones-->
+                    <img class="opacityHover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwcRgFA-KFW6u0wScyvZEBWMLME5WkdeCUg&s"
+                        alt="">
+
+                    <div id="divTextUserAndBtns"> <!--div para texto de usuario y btns-->
+                        <h1 class="usernameTextContent opacityHover"></h1>
+                        <div> <!--div para botones-->
+                            <button class="transparentBtns opacityHover">
+                                <h2>Entrenos</h2>
+                                <h6 id="workoutsCounterProfile">0</h6>
+                            </button>
+                            <button class="transparentBtns opacityHover">
+                                <h2>Seguidores</h2>
+                                <h6 id="followersCounterProfile">0</h6>
+                            </button>
+                            <button class="transparentBtns opacityHover">
+                                <h2>Siguiendo</h2>
+                                <h6 id="followingCounterProfile">0</h6>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="divDataProfileWorkouts">
+                    <div id="dataProfileWorkouts">
+                        <span class="material-symbols-outlined">signal_cellular_alt</span>
+                        <h1>Aún no hay datos</h1>
+                    </div> <!--div con estadisticas o graficos-->
+
+                    <button>Duración</button>
+                    <button>Volumen</button>
+                    <button>Repeticiones</button>
+                </div>
+
+                <!--ignorar simple h1-->
+                <h1 style="color: rgb(99, 99, 99); margin: 8px 0 0 10px; font-size: 14px;">Información</h1>
+
+                <div id="divDashboardProfile">
+                    <button><span class="material-symbols-outlined">monitoring</span>
+                        <h2>Estadísticas</h2>
+                    </button>
+                    <button><span class="material-symbols-outlined">exercise</span>
+                        <h2>Ejercicios</h2>
+                    </button>
+                    <button><span class="material-symbols-outlined">accessibility_new</span>
+                        <h2>Medidas</h2>
+                    </button>
+                    <button><span class="material-symbols-outlined">calendar_month</span>
+                        <h2>Estadísticas</h2>
+                    </button>
+                </div>
+
+                <!--ignorar simple h1-->
+                <h1 style="color: rgb(99, 99, 99); margin: 8px 0 0 10px; font-size: 14px;">Entrenamientos</h1>
+
+                <div id="divWorkoutsProfile">
+                    <div id="workoutsProfile">
+                        <span class="material-symbols-outlined">Exercise</span>
+                        <h1>Aún no hay entrenamientos</h1>
+                    </div> <!--div con entrenamientos hechos-->
+
+                </div>
+                <div class="forSpaceBlack"></div>
+            </div>
+
+
+
+
+
+            <div id="heavySettings" class="mainPagesStyle Dnone">
+                <header class="text-white mainHeaders">
+                    <button class="flex items-center text-white" id="heavySettingsBack">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 opacityHover" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                        </svg>
+                    </button>
+                    <h1>Ajustes</h1>
+                </header>
+
+                <!--ignorar simple h1-->
+                <h1 style="color: rgb(99, 99, 99); margin: 10px 0 10px 14px; font-size: 14px;">Cuenta</h1>
+             
+                <div id="divAccountSettings">
+                 <button class="opacityHover"><span class="material-symbols-outlined">person</span> <h1>Perfil</h1> <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                 <button class="opacityHover"> <span class="material-symbols-outlined">lock</span> <h1>Cuenta</h1> <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>   
+                 <button class="opacityHover"> <span class="material-symbols-outlined">notifications</span> <h1>Notificaciones</h1> <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                </div>
+
+                 <!--ignorar simple h1-->
+                <h1 style="color: rgb(99, 99, 99); margin: 10px 0 10px 14px; font-size: 14px;">Preferencias</h1>
+
+                <div id="divPreferencesSettings">
+                 <button class="opacityHover"> <span class="material-symbols-outlined">exercise</span> Entrenamientos <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                 <button class="opacityHover"> <span class="material-symbols-outlined">straighten</span> Unidades <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                 <button class="opacityHover"> <span class="material-symbols-outlined">flag</span> Idioma <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                 <button class="opacityHover"> <span class="material-symbols-outlined">dark_mode</span> Tema <span class="material-symbols-outlined chevron_rightSettings">chevron_right</span></button>
+                </div>
+
+                <button class="opacityHover" id="logOutSettings"><h1>Cerrar Sesión</h1></button>
+           
+            </div>
+
+
+            <footer>
+
+                <div id="homeFooterBtn">
+                    <span class="material-symbols-outlined">home</span>
+                    <h6 class="mainFooterBtns">Inicio</h6>
+                </div>
+
+                <div id="workoutFooterBtn" class="footerActiveBtn">
+                    <span class="material-symbols-outlined">exercise</span>
+                    <h6 class="mainFooterBtns">Entrenamiento</h6>
+                </div>
+
+                <div id="profileFooterBtn">
+                    <span class="material-symbols-outlined">person</span>
+                    <h6 class="mainFooterBtns">Perfil</h6>
+                </div>
+
+            </footer>
+
         </div>
     </div>
 
@@ -124,7 +309,7 @@
 
 
 
-    
+
     <script type="module" defer src="public/js/main.js"></script>
 </body>
 

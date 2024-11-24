@@ -36,14 +36,14 @@ export async function handleLogin(event) {
 
 export async function handleRegister(event) {
   event.preventDefault();
+
+  // Obtener valores de los inputs
   const nickname = document.getElementById("nicknameInput").value;
   const email = document.getElementById("emailInput").value;
   const password = document.getElementById("passwordInput").value;
-  //valor de inputs
-
-
 
   try {
+    // Solicitud de registro al servidor
     const response = await fetch("http://localhost:3000/register", {
       method: "POST",
       headers: {
@@ -52,13 +52,29 @@ export async function handleRegister(event) {
       body: JSON.stringify({ nickname, email, password }),
     });
 
-
     const data = await response.json();
+
     if (response.ok) {
       alert("Registro exitoso");
       const token = data.token;
+
+      // Guardar el token en localStorage
       localStorage.setItem('token', token);
-      animacion(document.getElementById("register"), document.getElementById("unitsSelector"),); //pasa
+      
+    
+      // Mostrar el nombre de usuario en los elementos correspondientes
+      const textos = document.getElementsByClassName("usernameTextContent");
+      Array.from(textos).forEach(element => {
+        element.innerText = data.nickname;
+      });
+
+      // Realizar la animación para cambiar de vista
+      animacion(document.getElementById("register"), document.getElementById("unitsSelector"));
+
+      // Limpiar campos de entrada
+      document.getElementById("nicknameInput").value = '';
+      document.getElementById("emailInput").value = '';
+      document.getElementById("passwordInput").value = '';
     } else {
       alert("Error en el registro: " + data.message);
     }

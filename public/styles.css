@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,7 @@ body {
     background-color: rgb(28, 28, 28);
 }
 
+/*Para abajo form para iniciar sesion*/
 .form {
     text-align: center;
     display: flex;
@@ -40,7 +41,8 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
 }
-#formFooter a:hover{
+
+#formFooter a:hover {
     color: rgba(85, 85, 85, 0.539);
 }
 
@@ -85,13 +87,15 @@ body {
     background: rgb(21, 21, 21);
     padding: 10px;
 }
+
 #login header button {
     transition: color 0.1s;
     position: absolute;
 }
-#login header h1{
+
+#login header h1 {
     margin: auto;
-    
+
 }
 
 
@@ -144,35 +148,41 @@ body {
     margin-top: 8px;
 }
 
+/*Selector de unidades*/
 
-#unitsSelector  header {
+#unitsSelector header {
     display: flex;
     align-items: center;
     background: rgb(21, 21, 21);
     padding: 10px;
     text-align: center;
 }
-#unitsSelector{
+
+#unitsSelector {
     background-color: black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-#unitsSelector h1{
-margin: auto;
+
+#unitsSelector h1 {
+    margin: auto;
 }
-#unitsSelector h6{
+
+#unitsSelector h6 {
     margin: 10px 0 0 20px;
     font-size: 14px;
     color: rgb(82, 84, 85);
 }
-#unitsSelector div{
+
+#unitsSelector div {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 10px 0 10px 0;
 }
-#unitsSelector .USbtn{
+
+#unitsSelector .USbtn {
     margin-top: -7px;
     width: 170px;
     padding: 7px 0 7px 0;
@@ -180,36 +190,34 @@ margin: auto;
     background-color: rgb(239, 239, 239);
     color: black;
     transition: background-color 0.05s;
-} 
+}
 
-#unitsSelector .USbtn:hover{
+#unitsSelector .USbtn:hover {
     background-color: rgba(255, 255, 255, 0.178);
 }
 
-#unitsSelector .USright{
+#unitsSelector .USright {
     border-radius: 0 10px 10px 0;
 }
 
 
-#unitsSelector .UStrueBtn{
+#unitsSelector .UStrueBtn {
     background-color: #155bff;
     color: white;
     transition: background-color 0.05s;
 }
 
-#unitsSelector .UStrueBtn:hover{
+#unitsSelector .UStrueBtn:hover {
     background-color: #155bff2f;
 }
 
-
-
-
-#unitsSelector footer{
+#unitsSelector footer {
     margin-top: auto;
     display: flex;
     justify-content: center;
 }
-#unitsSelector footer button{
+
+#unitsSelector footer button {
     color: white;
     background-color: #155bff;
     width: 350px;
@@ -218,9 +226,352 @@ margin: auto;
     margin-bottom: 10px;
     transition: background-color 0.05s;
 }
-#unitsSelector footer button:hover{
+
+#unitsSelector footer button:hover {
     background-color: #155bff3f;
 }
+
+
+/*Todo relacionado a paginas principales (inicio, entrenamiento, etcetc) */
+
+#main { /*Main es como el body de todo el inicio, le da el footer a los botones*/
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#main div:nth-of-type(2) h1 {
+    margin: auto;
+}
+
+#main div:nth-of-type(2) h2 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 213, 0);
+}
+
+.mainHeaders {
+    /*para headers de workout y profile */
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    padding: 10px;
+    text-align: center;
+}
+
+#workoutMainPage h3 {
+    font-size: 16px;
+    margin: 5px 0 0 7px;
+}
+
+.span5pxAway {
+    font-size: 30px;
+    padding: 0 5px 0 5px;
+}
+
+.largeGrayBtns {
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    padding: 2px;
+    width: 95%;
+    margin: 7px auto 0 auto;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.midGrayBtns {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    padding: 2px;
+    width: 175px;
+    margin: 7px 7px 0 7px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#main footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5px 0 5px 0;
+    background-color: rgb(31, 31, 31);
+}
+
+
+#main footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    /* Color por defecto */
+    cursor: pointer;
+}
+
+.footerActiveBtn {
+    /*Clase para el boton activo*/
+    color: #2a68f9 !important;
+}
+
+#main footer div span {
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+#main footer div:nth-of-type(2) span {
+    transform: rotateZ(45deg);
+    margin-top: -5px;
+}
+
+#main footer h6 {
+    font-size: 10px;
+    margin-top: -5px;
+    font-weight: normal;
+}
+
+
+.mainPagesStyle{
+    min-height: 60vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#profileMainPage header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profileMainPage header h2 {
+    margin: 0 0 0 0;
+    color: #2365ff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#profileMainPage header h1 {
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+#profileMainPage header span {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 0 0 0;
+}
+
+
+#divFlexProfileMain {
+display: flex;
+height: 75px;
+}
+#profileMainPage div:nth-child(2) img {
+    width: 65px;
+    height: 65px;
+    margin: 15px 0 0 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#divTextUserAndBtns{
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+margin-left: 10px;
+h1{
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+div{
+    font-size: 15px;
+}
+button{
+    text-align: start;
+}
+button h2{
+color: rgb(99, 99, 99);
+margin-top: 5px;
+font-size: 12px;
+width: 80px;
+}
+button h6{
+    font-size: 14px;
+    margin-top: -3px;
+}
+}
+
+#divDataProfileWorkouts{
+    margin-top: 12px;
+
+   #dataProfileWorkouts{
+        width: 95%;
+        height: 120px;
+        margin: 0 auto 0 auto;
+        background-color: rgb(30, 30, 30);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        span{
+           font-size: 50px;
+            margin: auto auto 5px auto;
+            color: rgb(114, 114, 114);
+        }
+        h1{
+           font-size: 14px;
+            margin: -5px auto auto auto;
+            color: rgb(89, 89, 89);
+        }
+    }
+    button{
+        margin: 5px 0 0 10px;
+        padding: 2px 10px 2px 10px;
+        background-color:rgb(31, 31, 31);
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    button:hover{
+       opacity: 0.2;
+    }
+}
+
+#divDashboardProfile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+    button{
+        display: flex;
+        align-items: center;
+        text-align: start;
+        padding: 5px;
+        background-color:rgb(31, 31, 31);        
+        border-radius: 5px;
+
+        span, h2{
+            margin-left: 10px;
+        }
+        h2{
+            font-size: 14px;
+        }
+    }
+    button:hover{
+        opacity: 0.2;
+    }
+}
+
+#workoutsProfile{
+    width: 95%;
+    height: 120px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    span{
+       font-size: 50px;
+        margin: auto auto 5px auto;
+        color: rgb(114, 114, 114);
+    }
+    h1{
+       font-size: 14px;
+        margin: -5px auto auto auto;
+        color: rgb(89, 89, 89);
+    }
+}
+
+
+
+#heavySettings{
+    header{
+        display: flex;
+       svg{
+        position: absolute;
+       }
+        
+        h1{
+            font-size: 14px;
+            margin: auto;
+        }
+    }
+
+    #divAccountSettings{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        button{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(31, 31, 31);
+            border: 1px solid rgb(38, 38, 38);
+            text-align: start;
+            
+            .chevron_rightSettings{
+                margin: auto 0 auto auto;
+            }
+        }
+    }
+}
+
+    #divPreferencesSettings{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        button{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(31, 31, 31);
+            border: 1px solid rgb(38, 38, 38);
+            text-align: start;
+          
+            .chevron_rightSettings{
+                margin: auto 0 auto auto;
+            }
+        }
+    }
+    
+    #logOutSettings{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(31, 31, 31);
+
+
+        h1{
+            color: rgb(255, 42, 0);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -234,6 +585,31 @@ margin: auto;
     color: white;
 }
 
+.material-symbols-outlined {
+    /*iconos */
+    background-color: transparent;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 40
+}
+
+.genericCenterDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.forSpaceBlack{
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    color: black;
+}
+.opacityHover:hover{
+opacity: 0.5;
+}
+
 .oculto {
     opacity: 0;
     transition: opacity 0.2s;
@@ -242,7 +618,7 @@ margin: auto;
 .Dnone {
     display: none !important;
 }
- 
+
 .show {
     opacity: 1;
     transition: opacity 0.2s;
